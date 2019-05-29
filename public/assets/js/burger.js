@@ -2,7 +2,7 @@
 $(function () {
     $(".change-burger").on("click", function (event) {
       var id = $(this).data("id");
-      var newBurger = $(this).data("newBurger");
+      var newBurger = $(this).data("newburger");
   
       var newBurgerInfo = {
         devoured: newBurger
@@ -47,6 +47,7 @@ $(function () {
   
     $(".delete-burger").on("click", function (event) {
       var id = $(this).data("id");
+      console.log(this);
   
       // Send the DELETE request.
       $.ajax("/api/burgers/" + id, {
