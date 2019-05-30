@@ -45,7 +45,7 @@ router.put("/api/burgers/:id", function(req, res) {
 });
 
 router.delete("/api/burgers/:id", function(req, res) {
-    
+    res.send("Deleted Burger")
 })
 
 // Export routes for server.js to use.
